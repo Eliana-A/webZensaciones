@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zen y Feng Shui</title>
+  <link rel="icon" href="imagenes/Zen.png" type="image/png"> <!--iono que aparecerá en la pestaña-->
+  <meta name="theme-color" content="#f5f2e8"> <!-- color de la pestaña (sólo parece funcionar en algunos navegadores)-->
+  
+  <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo style.css-->
+  
+</head>
+
+<!--Realizo comentarios en donde creo necesario aclarar, intentando no caer en excesos o redundancias -->  
+
+<body>
+  <!-- Encabezado principal con logo y menú de navegación  -->
+  <header>
+    
+    <div class="logo">
+      <img src="imagenes/Zen.png" alt="Logo" class="logo"/>
+    </div>
+    
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="info.html">Información</a></li>
+        <li><a href="recursos.html">Recursos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+
+
+  <main>
+    
+   <div class="container">    
+    
+    
+    <div>
+      <h2 class="latido">Envíanos tus sugerencias y comentarios</h2> <!-- Agrego la clase latido para darle animación al título-->      
+      <p>Colabora con nosotros para que nuestra experiencia sea aún más maravillosa</p>
+  
+      <!--Utilizo formsubmit.com que es uno de los servivcios gratuitos para poder recibir 
+        los mensajes a mi correo sin aún programar el backend-->
+        
+     <form action="https://formsubmit.co/elianaavogadro@gmail.com" method="post">
+      <label for="nombre">Nombre:*</label><br>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
+
+      <label for="email">Correo electrónico:*</label><br>
+      <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required><br><br>
+
+      <label for="coment">Comentario*</label><br>
+      <textarea name="comentario" placeholder="Escribe tu comentario aquí..."></textarea>
+  
+      <br><br>
+      
+      <div class="boton-derecha">  
+        <input type="submit" value="Enviar">
+      </div>
+    
+     </form>
+    </div>
+    <h2>~~~~~~~</h2>
+    <div class="centrar"> <!-- Creo la clase "centrar" para dar formato centrado al la imágen -->
+      <img src="imagenes/circulos.png" alt="circulos" class="circulo latido"/> <!-- Aquí la clase "circculo latido" para poder darle animación luego -->
+    </div>
+   
+   </div>
+  
+  </main>
+ 
+  
+  <!-- Pie de página con redes sociales e información -->
+    
+  <footer>
+  <!-- Redes sociales --> <!--Aún no están enlazadas porque no se crean-->
+  <section>
+    <ul class="redes-sociales">  <!-- Creo la clase "redes-soliales" para luego darle formato  -->
+      <li><img src="imagenes/face.png" alt="facebook" class="redes" /></li>
+      <li><img src="imagenes/Instagram.png" alt="instagram" class="redes" /></li>
+      <li><img src="imagenes/twitter.png" alt="twitter" class="redes" /></li>
+      <li><img src="imagenes/youtube.png" alt="youtube" class="redes" /></li>
+    </ul>
+  </section>
+
+  <!-- Cuatro columnas para enlaces del pie de página que aún no están enlazadas a ningún documento, lo cual se realizará a futuro-->
+  <div class="footer-columns">
+    <div class="column">
+      <ul>
+        <li><a href="#">Avisos legales</a></li>
+        <li><a href="#">Código de servicio</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <ul> 
+        <li><a href="#">Centro de ayuda</a></li>
+        <li><a href="#">Preferencias de Cookies</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <ul>
+        <li><a href="#">Términos de uso</a></li>
+        <li><a href="#">Privacidad</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <ul>
+        <li><a href="#">Sobre nosotros</a></li>
+        <li><a href="#">Otros blogs</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!--Derechos de autor-->
+  <p style="margin-top: 30px;">&copy; 2025 Zen & Feng Shui by Eliana Avogadro - Todos los derechos reservados</p>
+</footer>
+</body>
+
+</html>
