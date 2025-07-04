@@ -45,7 +45,7 @@ nav a:hover { /* Hace que  cuando se pase el mouse por los ítems del menú, se 
 }
 @media (max-width: 768px) { /*Hice responseve el menú para que en dispositivos más pequeños se vea bien*/
   nav ul.menu {
-    flex-direction: row !important;      /* Esto obliga a que el menú siga siendo horizontal */
+    flex-direction: row !important;      /* Esto obliga a que el menú siga siendo horizontal y por si acaso se cambia el código o hay otra regla puse important para que tome esta primero*/
     align-items: center;         /* Centra los ítems */
     gap: 8px;                   /* Espacio entre ellos */
     padding: 0;                  /* Quita el padding  */
@@ -55,7 +55,6 @@ nav a:hover { /* Hace que  cuando se pase el mouse por los ítems del menú, se 
     padding: 2px; /* menos espacio interno */
   }
  header {
-    flex-direction: column;     /* Acomoda el ogo arriba y menú abajo */
     align-items: center;        /* Centra ambos elementos */
     padding: 10px 20px;         /* Reduce padding lateral */
   }
