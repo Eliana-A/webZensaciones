@@ -1,4 +1,21 @@
+@media (max-width: 768px) { /*Hice responseve el menú para que en dispositivos más pequeños se vea bien*/
+  nav ul.menu {
+    flex-direction: column;      /* Pone los elementos uno debajo del otro */
+    align-items: center;         /* Centra los ítems */
+    gap: 10px;                   /* Espacio entre ellos */
+    padding: 0;                  /* Quita el padding  */
+  }
 
+  header {
+    flex-direction: column;     /* Acomoda el ogo arriba y menú abajo */
+    align-items: center;        /* Centra ambos elementos */
+    padding: 10px 20px;         /* Reduce padding lateral */
+  }
+
+  .logo img {
+    height: 80px;               /* Reduce tamaño del logo */
+  }
+}
 body {
     background-color: #f5f2e8; /* color de fondo del cuerpo (body) de la página    */
     padding: 10px;  /* espacio interno entre el contenido y el borde */
