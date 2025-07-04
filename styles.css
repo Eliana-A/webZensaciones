@@ -47,15 +47,19 @@ nav a:hover { /* Hace que  cuando se pase el mouse por los ítems del menú, se 
   nav ul.menu {
     flex-direction: column;      /* Pone los elementos uno debajo del otro */
     align-items: center;         /* Centra los ítems */
-    gap: 10px;                   /* Espacio entre ellos */
+    gap: 8px;                   /* Espacio entre ellos */
     padding: 0;                  /* Quita el padding  */
   }
-header {
+ nav a {
+    font-size: 100%; /* baja el tamaño del texto del menú */
+    padding: 2px; /* menos espacio interno */
+  }
+ header {
     flex-direction: column;     /* Acomoda el ogo arriba y menú abajo */
     align-items: center;        /* Centra ambos elementos */
     padding: 10px 20px;         /* Reduce padding lateral */
   }
-  .logo img {
+ .logo img {
     height: 80px;               /* Reduce tamaño del logo */
   }
 }
