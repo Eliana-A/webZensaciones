@@ -45,7 +45,7 @@ nav a:hover { /* Hace que  cuando se pase el mouse por los ítems del menú, se 
 }
 @media (max-width: 768px) { /*Hice responseve el menú para que en dispositivos más pequeños se vea bien*/
   nav ul.menu {
-    flex-direction: column;      /* Pone los elementos uno debajo del otro */
+    flex-direction: row !important;      /* Esto obliga a que el menú siga siendo horizontal */
     align-items: center;         /* Centra los ítems */
     gap: 8px;                   /* Espacio entre ellos */
     padding: 0;                  /* Quita el padding  */
@@ -82,7 +82,6 @@ nav a:hover { /* Hace que  cuando se pase el mouse por los ítems del menú, se 
   width: 30%;
   height: auto; 
 }
-
 
 .video-wrapper {   /*Debí crear este contenedor para que el video sea responsive*/
    position: relative;
@@ -171,7 +170,6 @@ img {
   width: auto;
   border: 1px solid #87A96B; /* Un borde para que se vea mejor el redondeo */
   border-radius: 15px; /* Redondea las 4 esquinas con un radio de 15px */
-
 }
 
 /* Agrupa horizontalmente los videos */
@@ -208,7 +206,6 @@ img {
     transform: scale(1.05); /* A la mitad del ciclo, el texto se agranda un 5%, simulando un latido */
   }
 }
-
 
 form {
   font-family: 'Quicksand', sans-serif;
